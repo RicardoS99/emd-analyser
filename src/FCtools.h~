@@ -1,0 +1,20 @@
+#ifndef _FCTOOLS_
+#define _FCTOOLS_
+
+#include <iostream>
+#include "Vec.h"
+#include <vector>
+#include <string>
+#include "ODEpoint.h"
+#include "TGraph.h"
+using namespace std;
+
+
+class FCtools{
+ public:
+  static vector<string> StrReadFile (string);
+  static vector<Vec> VecReadFile(string);
+  static Vec* ReadFile(string, int &);
+};
+
+#endif
